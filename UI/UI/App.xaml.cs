@@ -14,7 +14,7 @@ namespace UI
         {
             base.OnStartup(e);
 
-            Sooqa = 5;
+            Sooqa = 10;
         }
     }
 }
