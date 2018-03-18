@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using GalaSoft.MvvmLight.Ioc;
+using System.Windows;
+using UI.Interfaces;
 
 namespace UI
 {
@@ -7,14 +9,15 @@ namespace UI
     /// </summary>
     public partial class App : Application
     {
-
-        public int Sooqa;
-
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            Sooqa = 5;
+            Bootstrapper.Initialize();
+
+            IMainWindowViewModel window = SimpleIoc.Default.GetInstance<IMainWindowViewModel>();
+            MainWindow = (MainWindow)window.Window;
+            MainWindow.ShowDialog();
         }
     }
 }
