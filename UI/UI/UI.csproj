@@ -98,7 +98,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Infrastructures\NavigationService.cs" />
     <Compile Include="Interfaces\Window\IMainWindow.cs" />
     <Compile Include="Interfaces\Base\IView.cs" />
     <Compile Include="Interfaces\Base\IWindow.cs" />
@@ -138,7 +137,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
