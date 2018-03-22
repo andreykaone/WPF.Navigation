@@ -15,16 +15,8 @@ namespace UI.ViewModels
             ShowView<IMainViewModel>();
         }
 
-        private void ShowMainView()
-        {
-            ShowView<IMainViewModel>();
-        }
-
-        private void ShowAnotherView()
-        {
-            ShowView<IAnotherViewModel>();
-        }
-
+        private void ShowMainView() => ShowView<IMainViewModel>();
+        private void ShowAnotherView() => ShowView<IAnotherViewModel>();
         private void Exit() => App.Current.Shutdown();
 
         public RelayCommand ExitCommand { get; set; }

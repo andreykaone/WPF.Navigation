@@ -27,9 +27,24 @@ namespace UI.ViewModels
                 _container = value;
             }
         }
-        public IView View { get; set; }
+        public IView View
+        {
+            get
+            {
+                return _view;
+            }
+            set
+            {
+                if (value == null)
+                    return;
+
+                _view = value;
+                OnPropertyChanged();
+            }
+        }
 
 
         private ISimpleIoc _container;
+        private IView _view;
     }
 }

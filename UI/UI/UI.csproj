@@ -70,22 +70,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AnotherView.xaml.cs">
+    <Compile Include="Views\AnotherView.xaml.cs">
       <DependentUpon>AnotherView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\View\IAnotherView.cs" />
     <Compile Include="Interfaces\View\IMainViewModel.cs" />
-    <Compile Include="MainView.xaml.cs">
+    <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ViewModel\AnotherViewModel.cs" />
     <Compile Include="ViewModels\ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModels\WindowViewModel\MainWindowViewModel.cs" />
-    <Page Include="AnotherView.xaml">
+    <Page Include="Views\AnotherView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainView.xaml">
+    <Page Include="Views\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

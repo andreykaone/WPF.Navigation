@@ -9,6 +9,7 @@ namespace UI.Interfaces
     public interface IMainWindow : IWindow
     {
     }
+
     public interface IMainWindowViewModel : IWindowViewModel
     {
     }

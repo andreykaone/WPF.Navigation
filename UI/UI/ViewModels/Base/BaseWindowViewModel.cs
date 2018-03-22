@@ -52,7 +52,8 @@ namespace UI.ViewModels
 
         protected void ShowView<T>() where T : IViewModel
         {
-            View = SimpleIoc.Default.GetInstance<T>().View;
+            var view = SimpleIoc.Default.GetInstance<T>().View;
+            View = view;
         }
     }
 }
